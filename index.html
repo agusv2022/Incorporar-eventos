@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>
+            Selecciona que jugadores participaron de Copa del mundo 98
+        </h1>
+    </header>
+    <select name="jugador" id="jugador">
+        <option value="Zidane" type="button" onclick="addText('Zidane ')" >Zidane</option>
+        <option value="Baggio" type="button" onclick="addText('Baggio ')" >Baggio</option>
+        <option value="Bebeto" type="button" onclick="addText('Bebeto ')" >Bebeto</option>
+        <option value="Sorin" type="button"  onmousemove="prohibido('Ups quizas te equivocas')" >Sorin</option>
+      </select>
+      
+
+        <button type="button" onclick="removeText()">Quitar jugador</button> 
+        <div id="texto"></div>
+ 
+        <button type="button" onclick="GuardarForm('Respuesta correcta')">Guardar respuesta</button> 
+        <div id="texto2"></div>
+        <div hidden> La respuesta es incorecta, Sorin no ha participado</div>
+        <div id="texto3"></div>
+
+ 
+<script src="index.js"></script>
+</body>
+</html>
